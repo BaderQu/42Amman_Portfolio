@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bader Al-Qutub | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo" data-i18n="logo">Bader Al-Qutub</h1>
+    <nav>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#hobbies" data-i18n="navHobbies">Hobbies</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" id="themeBtn">Dark mode</button>
+      <button type="button" id="langBtn" data-i18n="langBtn">العربية</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <div class="avatar-box">
+        <img id="avatar" src="assets/photo.jpg" alt="Photo of Bader Al-Qutub" class="photo">
+        <button type="button" id="photoBtn" data-i18n="photoBtn">Switch photo</button>
+      </div>
+      <div>
+        <h2 data-i18n="aboutTitle">About Me</h2>
+        <p data-i18n="aboutText">Hi, I'm Bader Al-Qutub, 24 years old. I graduated last year from Applied Science Private University with a bachelor's degree in cybersecurity and cloud computing. I'm now learning web development to build my own projects.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 data-i18n="skillsTitle">Skills</h2>
+      <div class="skills-grid">
+        <div class="card" data-i18n="skill1">Cybersecurity</div>
+        <div class="card" data-i18n="skill2">Cloud Computing</div>
+        <div class="card" data-i18n="skill3">Infrastructure</div>
+        <div class="card" data-i18n="skill4">Git &amp; GitHub</div>
+        <div class="card" data-i18n="skill5">Organizing tournaments</div>
+        <div class="card" data-i18n="skill6">EH</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 data-i18n="projectsTitle">Project Showcase</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-number">00</span>
+          <h3 data-i18n="p0Title">Project 00: Kali Linux Terminal &amp; Git-GitHub</h3>
+          <p data-i18n="p0Desc">Worked in the Kali Linux terminal to manage files and folders, then used Git and GitHub to create a repository, commit my work, and push it over SSH, with a README written in Markdown.</p>
+          <a class="btn" href="https://github.com/BaderQu/project00" target="_blank" rel="noopener" data-i18n="viewGithub">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">01</span>
+          <h3 data-i18n="p1Title">Project 01: HTML</h3>
+          <p data-i18n="p1Desc">Built pages with HTML, covering text hierarchy, links, images, lists, tables, forms and a semantic blog layout.</p>
+          <a class="btn" href="https://github.com/BaderQu/project01" target="_blank" rel="noopener" data-i18n="viewGithub">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">02</span>
+          <h3 data-i18n="p2Title">Project 02: CSS</h3>
+          <p data-i18n="p2Desc">Styled HTML pages with CSS to control layout, colors, typography and spacing.</p>
+          <a class="btn" href="https://github.com/BaderQu/project02" target="_blank" rel="noopener" data-i18n="viewGithub">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">03</span>
+          <h3 data-i18n="p3Title">Project 03: JavaScript</h3>
+          <p data-i18n="p3Desc">Built an interactive web page using JavaScript, HTML and CSS, with DOM manipulation and event handling.</p>
+          <a class="btn" href="https://github.com/BaderQu/project03" target="_blank" rel="noopener" data-i18n="viewGithub">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2 data-i18n="hobbiesTitle">Hobbies</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <span class="hobby-icon">🛡️</span>
+          <h3 data-i18n="hobby1Title">Cybersecurity</h3>
+          <p data-i18n="hobby1Desc">Ethical hacking, networks, and protecting systems.</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">📚</span>
+          <h3 data-i18n="hobby2Title">Learning</h3>
+          <p data-i18n="hobby2Desc">Picking up new skills and tools every single day.</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">💻</span>
+          <h3 data-i18n="hobby3Title">Technology</h3>
+          <p data-i18n="hobby3Desc">Exploring new gadgets, cloud, and the latest tech.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 data-i18n="contactTitle">Contact Me</h2>
+      <p class="section-intro" data-i18n="contactIntro">Feel free to reach out by email, phone, or the form below.</p>
+
+      <div class="contact-info">
+        <a class="contact-card" href="mailto:badernabeel02@gmail.com">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-text">
+            <small data-i18n="labelEmail">Email</small>
+            <strong>badernabeel02@gmail.com</strong>
+          </span>
+        </a>
+        <a class="contact-card" href="tel:+962785227889">
+          <span class="contact-icon">📞</span>
+          <span class="contact-text">
+            <small data-i18n="labelPhone">Phone</small>
+            <strong>00962785227889</strong>
+          </span>
+        </a>
+      </div>
+
+      <form id="contactForm">
+        <label for="name" data-i18n="labelName">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email" data-i18n="labelEmail">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="message" data-i18n="labelMessage">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit" data-i18n="sendBtn">Send</button>
+        <p id="formMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer">&copy; 2026 Bader Al-Qutub. Built by hand with HTML, CSS and JavaScript.</p>
+  </footer>
+</body>
+</html>
